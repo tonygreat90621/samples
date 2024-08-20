@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /demo
+    register-default-servlet: true
+spring:
+  profiles:
+    active: dev
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
